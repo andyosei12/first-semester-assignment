@@ -1,0 +1,29 @@
+:root {
+  /* colors */
+  --color-primary400: "#005AE2";
+  --color-primary300: "#0065FE";
+  --color-white: "#FFFFFF";
+  --color-black: "#141414";
+
+  /* font */
+  --sans-serif: "Quicksand", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--sans-serif);
+  color: var(--color-black);
+  font-weight: 400;
+}
