@@ -39,6 +39,10 @@ a {
   color: var(--color-black);
 }
 
+.text-blue {
+  color: var(--color-primary400);
+}
+
 .wrapper {
   padding: 1.2rem 14rem;
 }
@@ -94,6 +98,8 @@ a {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+/* hero section styles */
 
 .hero {
   min-height: calc(100vh - 5.6rem);
@@ -173,4 +179,39 @@ a {
   position: absolute;
   left: 978px;
   top: 111.9px;
+}
+
+/* stats section styles */
+.stats--wrapper {
+  margin: 1.8rem -14rem;
+  background-color: #f9fbfd;
+  padding: 6rem 14rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats--headline {
+  font-size: 3rem;
+  font-family: "Gilroy-Bold", sans-serif;
+  /* width: 100%; */
+  /* gap: 20rem; */
+  /* margin-right: 8rem; */
+}
+
+.stats--figures {
+  display: flex;
+  gap: 5rem;
+}
+
+.stats--figures div h3:first-of-type {
+  font-size: 2.5rem;
+  margin-bottom: 0.4rem;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.stats--figures div h3:last-of-type {
+  font-size: 1.2rem;
 }
