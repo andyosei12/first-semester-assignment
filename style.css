@@ -27,7 +27,6 @@ body {
   color: var(--color-black);
   font-weight: 400;
   max-width: 144rem;
-  margin-bottom: 10rem;
 }
 
 img {
@@ -38,6 +37,29 @@ img {
 a {
   text-decoration: none;
   color: var(--color-black);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid var(--color-primary300);
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+
+input::placeholder,
+select {
+  color: var(--color-primary300);
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  width: 100%;
 }
 
 .text-blue {
@@ -397,4 +419,43 @@ a {
 
 .pricing--btns {
   margin-top: 7rem;
+}
+
+/* demo */
+.demo {
+  margin: 11rem -14rem;
+  background-image: url("./assets/bg-main.png");
+  background-repeat: no-repeat;
+  position: relative;
+  height: 55rem;
+}
+
+.demo--form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: 50rem;
+  background-color: var(--color-white);
+  padding: 4rem;
+}
+
+.demo--form p {
+  font-size: 1.2rem;
+  color: var(--color-primary300);
+  width: 95%;
+  margin-top: 2rem;
+}
+
+.input--group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn--trim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--sans-serif);
+  margin-left: 0;
 }
