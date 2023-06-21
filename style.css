@@ -65,6 +65,9 @@ button {
 .text-blue {
   color: var(--color-primary400);
 }
+.text-white {
+  color: var(--color-white);
+}
 
 .headline {
   font-size: 3.5rem;
@@ -463,7 +466,7 @@ button {
 /* FAQs */
 .faqs {
   text-align: center;
-  margin: 0 -14rem;
+  margin: 0 -14rem 10rem;
   background-image: url("./assets/FAQs.png");
   background-repeat: no-repeat;
 }
@@ -524,4 +527,19 @@ button {
   text-align: left;
   line-height: 1.5;
   margin-top: 1rem;
+}
+
+.mission {
+  text-align: center;
+  padding: 10rem 0;
+  margin-inline: -14rem;
+  background-image: url("./assets/bg-sub.png");
+}
+
+.mission h1 {
+  margin-bottom: 3rem;
+}
+
+.mission a {
+  padding: 1.2rem 5rem;
 }
