@@ -44,7 +44,7 @@ a {
 }
 
 .headline {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Gilroy-Bold", sans-serif;
 }
 
@@ -112,7 +112,7 @@ a {
 
 .hero {
   min-height: calc(100vh - 5.6rem);
-  margin-top: 4rem;
+  margin-top: 6rem;
   position: relative;
   text-align: center;
 }
@@ -262,7 +262,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   column-gap: 3rem;
-  row-gap: 7rem;
+  row-gap: 5rem;
 }
 
 .about--services h1 {
@@ -274,4 +274,112 @@ a {
 .about--services p {
   font-size: 1.4rem;
   line-height: 1.3;
+}
+
+/* pricing styles */
+.pricing {
+  margin-top: 12rem;
+  text-align: center;
+}
+
+.pricing--headline {
+  display: grid;
+  grid-template-columns: 0.5rem repeat(3, max-content);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pricing--headline::before {
+  content: "";
+  width: 0.5rem;
+  height: 48px;
+  background-image: linear-gradient(
+    180deg,
+    hsl(209deg 49% 13%) 17%,
+    hsl(209deg 47% 16%) 48%,
+    hsl(210deg 44% 20%) 57%,
+    hsl(210deg 41% 23%) 62%,
+    hsl(209deg 39% 26%) 66%,
+    hsl(209deg 38% 29%) 69%,
+    hsl(209deg 35% 32%) 74%,
+    hsl(209deg 33% 35%) 80%,
+    hsl(209deg 30% 39%) 88%,
+    hsl(209deg 28% 42%) 100%
+  );
+}
+
+.pricing--headline-text {
+  font-size: 1.4rem;
+  width: 45%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pricing--plans {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.pricing--plans div > *:not(ul) {
+  margin-left: -2rem;
+}
+
+.pricing--plans h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pricing--plans h1 {
+  font-size: 2.5rem;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.pricing--plans p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  /* margin-left: -1rem; */
+}
+
+.pricing--plans ul {
+  font-size: 1.3rem;
+  list-style-image: url("./assets/check-blue.svg");
+}
+.pricing--plans ul li {
+  margin-bottom: 2rem;
+}
+
+.pricing--plans div:not(:nth-child(2)) {
+  border: 1px solid var(--color-primary400);
+  padding: 3rem 8rem;
+  border-radius: 1rem;
+  text-align: left;
+}
+
+.pricing--professional {
+  padding: 3rem 6rem;
+  border-radius: 1rem;
+  text-align: left;
+  background-color: #1e3448;
+  color: var(--color-white);
+  padding-top: 8rem;
+  padding-bottom: 13rem;
+  margin-top: -6rem;
+  z-index: 100;
+}
+
+.pricing--professional ul {
+  list-style-image: url("./assets/check-outline.svg");
+}
+
+.pricing--plans div:first-of-type {
+  margin-right: -7rem;
+}
+.pricing--plans div:last-of-type {
+  margin-left: -5rem;
+  padding-right: 5rem;
 }
