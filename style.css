@@ -423,7 +423,7 @@ button {
 
 /* demo */
 .demo {
-  margin: 11rem -14rem;
+  margin: 11rem -14rem 0 -14rem;
   background-image: url("./assets/bg-main.png");
   background-repeat: no-repeat;
   position: relative;
@@ -458,4 +458,70 @@ button {
   align-items: center;
   font-family: var(--sans-serif);
   margin-left: 0;
+}
+
+/* FAQs */
+.faqs {
+  text-align: center;
+  margin: 0 -14rem;
+  background-image: url("./assets/FAQs.png");
+  background-repeat: no-repeat;
+}
+
+.faqs--headline {
+  display: grid;
+  grid-template-columns: 0.5rem max-content;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.faqs--headline::before {
+  content: "";
+  width: 0.5rem;
+  height: 48px;
+  background-image: linear-gradient(
+    180deg,
+    hsl(209deg 49% 13%) 17%,
+    hsl(209deg 47% 16%) 48%,
+    hsl(210deg 44% 20%) 57%,
+    hsl(210deg 41% 23%) 62%,
+    hsl(209deg 39% 26%) 66%,
+    hsl(209deg 38% 29%) 69%,
+    hsl(209deg 35% 32%) 74%,
+    hsl(209deg 33% 35%) 80%,
+    hsl(209deg 30% 39%) 88%,
+    hsl(209deg 28% 42%) 100%
+  );
+}
+
+.faq {
+  width: 60rem;
+  margin: 2.5rem auto;
+  border-bottom: 1px solid var(--color-black);
+  padding-bottom: 2rem;
+}
+
+.faq--question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq--question h3 {
+  margin-right: auto;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.faq--question button {
+  background-color: transparent;
+  width: 1rem;
+}
+
+.faq--answer {
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
