@@ -245,7 +245,7 @@ button {
 
 .stats--figures {
   display: flex;
-  gap: 5rem;
+  gap: 6rem;
 }
 
 .stats--figures div h3:first-of-type {
